@@ -13,6 +13,7 @@ namespace PipeServer
         private StreamReader pipeReader;
         private bool running = true;
         private string input = string.Empty;
+        private Dictionary<string, Currency> currencies = new Dictionary<string, Currency>();
 
         public void Run(string pipeName)
         {
