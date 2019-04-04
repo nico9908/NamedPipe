@@ -52,5 +52,15 @@ namespace PipeServer
             Console.WriteLine("\nInput var: " + input);
             return !(input.ToUpper().Equals("EXIT"));
         }
+
+        private void ShowCurrencies()
+        {
+            Console.WriteLine("\nValutakurser: ");
+            foreach (Currency c in currencies.Values)
+            {
+                Console.WriteLine($"{c.CountryCode}, {c.ExchangeRate}");
+            }
+        }
+
     }
 }
